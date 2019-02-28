@@ -29,3 +29,9 @@ Route::get('/email/{email}', function($email){
 });
 
 Route::get('/produto','ProdutoControlador@listar');
+
+Route::get('/secaoproduto/{palavra}','ProdutoControlador@secaoproduto');
+
+Route::get('/mostraropcoes','ProdutoControlador@mostraropcoes');
+
+Route::get('/opcoes/{opcao}', 'ProdutoControlador@opcoes');
