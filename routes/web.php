@@ -2,7 +2,7 @@
 
 
 Route::get('/', function () {
-    return view('pagina');
+    return view('welcome');
 });
 
 Route::get('/primeiraview', function(){
@@ -35,3 +35,7 @@ Route::get('/secaoproduto/{palavra}','ProdutoControlador@secaoproduto');
 Route::get('/mostraropcoes','ProdutoControlador@mostraropcoes');
 
 Route::get('/opcoes/{opcao}', 'ProdutoControlador@opcoes');
+
+Route::get('/loop/for/{n}','ProdutoControlador@loopfor');
+
+Route::get('/foreach','ProdutoControlador@foreach');

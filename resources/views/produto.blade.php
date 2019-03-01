@@ -17,6 +17,10 @@
       <h1>Temos vários produto</h1>
    @endif
 
+      @foreach($produto as $p)
+      <p>Nome:{{$p}}</p>
+      @endforeach
+
    @else
       <h2>Variável produtos não foi passada como parâmetro.</h2>
    @endif
